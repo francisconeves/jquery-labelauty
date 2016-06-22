@@ -171,7 +171,8 @@
 			});
 			
 			element.keypress(function(event){
-				if(event.keyCode === 32){			
+				event.preventDefault();
+				if(event.keyCode === 32 || event.keyCode === 13){		
 					if($object.is(':checked')){
 						$object.prop('checked', false);
 						$(element).attr('aria-checked',false);
