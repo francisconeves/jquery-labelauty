@@ -13,12 +13,17 @@
 			<input checked type="checkbox" aria-label="Should this synchronize your files?" data-labelauty="Don't synchronize files|Synchronize my files"/>
 			<input type="checkbox" data-labelauty="Don't delete my files|Delete my files"/>
 			<input checked type="checkbox"/>
+			
+			<input checked type="radio" aria-label="Should this synchronize your files?" data-labelauty="Don't synchronize files|Synchronize my files"/>
+			<input type="radio" data-labelauty="Don't delete my files|Delete my files"/>
+			<input checked type="radio"/>
 		</form>
 		
 		<h2 tabindex="0">End of Example</h2>
 		<script>
 			$(document).ready(function(){
 				$(":checkbox").labelauty();
+				$(":radio").labelauty();
 			});
 		</script>
 	</body>

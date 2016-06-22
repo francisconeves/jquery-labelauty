@@ -62,6 +62,7 @@
 		{
 			var $object = $( this );
 			var selected = $object.is(':checked');
+			var type = $object.attr('type');
 			var use_labels = true;
 			var labels;
 			var labels_object;
@@ -159,7 +160,7 @@
 			// Now, add necessary tags to make this work
 			// Here, we're going to test some control variables and act properly
 			
-			var element = jQuery(create( input_id, aria_label, selected, labels_object, use_labels ))
+			var element = jQuery(create( input_id, aria_label, selected, type, labels_object, use_labels ))
 			
 			element.click(function(){
 				if($object.is(':checked')){
@@ -228,7 +229,7 @@
 			window.console.log( "jQuery-LABELAUTY: " + message );
 	};
 
-	function create( input_id, aria_label, selected, messages_object, label )
+	function create( input_id, aria_label, selected, type, messages_object, label )
 	{	
 		var block;
 		var unchecked_message;
@@ -251,7 +252,7 @@
 		if(aria_label == null)
 			aria = "";	
 		else
-			aria = 'tabindex="0" role="checkbox" aria-checked="' + selected + '" aria-label="' + aria_label + '"';
+			aria = 'tabindex="0" role="' + type + '" aria-checked="' + selected + '" aria-label="' + aria_label + '"';
 		
 		if( label == true )
 		{
