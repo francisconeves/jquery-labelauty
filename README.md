@@ -20,7 +20,7 @@ bower install labelauty
 Or with Yarn :
 
 ~~~
-yarn install labelauty
+yarn add labelauty
 ~~~
 
 
