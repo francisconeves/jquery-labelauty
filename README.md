@@ -10,8 +10,17 @@ __Note:__ Labelauty does not support Internet Explorer 7 and 8.
 
 Installation
 ------------
+
+You can choose to install labelauty with Bower :
+
 ~~~
 bower install labelauty
+~~~
+
+Or with Yarn :
+
+~~~
+yarn install labelauty
 ~~~
 
 
