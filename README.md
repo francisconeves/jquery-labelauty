@@ -11,13 +11,19 @@ __Note:__ Labelauty does not support Internet Explorer 7 and 8.
 Installation
 ------------
 
-You can choose to install labelauty with Bower :
+Install with Bower :
 
 ~~~
-bower install labelauty
+bower install labelauty --save
 ~~~
 
-Or with Yarn :
+Install with NPM :
+
+~~~
+npm install labelauty --save
+~~~
+
+Install with Yarn :
 
 ~~~
 yarn add labelauty
