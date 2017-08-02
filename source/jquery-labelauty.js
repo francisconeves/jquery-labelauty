@@ -86,7 +86,7 @@
 
 			// Add "labelauty" class to all checkboxes
 			// So you can apply some custom styles
-			$object.addClass( settings['class'] );
+			$object.addClass( settings["class"] );
 			
 			// Get the value of "data-labelauty" attribute
 			// Then, we have the labels for each case (or not, as we will see)
